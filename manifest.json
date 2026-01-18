@@ -1,0 +1,19 @@
+{
+
+  "description": "Makes the captions on YouTube cleaner",
+  "manifest_version": 2,
+  "name": "YouTube Clean Captions",
+  "version": "1.0",
+  "homepage_url": "https://github.com/hexiom/yt-clean-captions",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/watch?v=*", "*://www.youtube.com/shorts/*", "*://www.youtube.com/embed/*"],
+      "js": ["index.js"]
+    }
+  ]
+
+}
